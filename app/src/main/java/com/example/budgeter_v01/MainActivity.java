@@ -18,6 +18,17 @@ public class MainActivity extends AppCompatActivity {
 
         configureLoginButton();
         configureRegisterButton();
+        configureCheatButton();
+    }
+
+    private void configureCheatButton() {
+        Button cheatButton = (Button) findViewById(R.id.CheatButton);
+        cheatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, setup_activity.class));
+            }
+        });
     }
 
     private void configureLoginButton(){

@@ -12,17 +12,5 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        configureBackButton();
-    }
-
-    private void configureBackButton() {
-        Button backButton = (Button) findViewById(R.id.backbutton);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, MainActivity.class));
-            }
-        });
     }
 }
