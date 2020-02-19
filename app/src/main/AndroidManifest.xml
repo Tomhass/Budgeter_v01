@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_setup2"></activity>
+        <activity android:name=".CarTravelActivity"></activity>
+        <activity android:name=".activity_setup2" />
         <activity android:name=".setup_activity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />

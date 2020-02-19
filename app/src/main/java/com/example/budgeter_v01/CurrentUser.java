@@ -28,6 +28,7 @@ public class CurrentUser extends setup_activity {
     public void setCarTravel(boolean car) {
         this.carTravel = car;
     }
+
     public boolean getBusTravel() {
         return this.busTravel;
     }
