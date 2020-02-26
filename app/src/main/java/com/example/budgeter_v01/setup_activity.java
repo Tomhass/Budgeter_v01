@@ -15,7 +15,9 @@ public class setup_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup_activity);
 
-        // Variables for seek bar
+        CurrentUser user = new CurrentUser();
+
+        // Instantiating
         final SeekBar monthlySBar = (SeekBar) findViewById(R.id.seekBar);
         final SeekBar savingSBar = (SeekBar) findViewById(R.id.seekBar2);
         final TextView mnthlyTxtView = (TextView) findViewById(R.id.monthlyTxtView);

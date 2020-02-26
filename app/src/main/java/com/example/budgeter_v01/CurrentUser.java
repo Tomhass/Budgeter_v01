@@ -1,10 +1,16 @@
 package com.example.budgeter_v01;
 
-public class CurrentUser extends setup_activity {
+class CurrentUser {
+
+    private static CurrentUser single_instance = null;
+
     private double monthlyPayment;
     private double savingAmount;
     private boolean carTravel;
     private boolean busTravel;
+
+    CurrentUser user = new CurrentUser();
+
 
     // GETTERS AND SETTERS
     // Monthly Payment
@@ -35,4 +41,13 @@ public class CurrentUser extends setup_activity {
     public void setBusTravel(boolean bus) {
         this.busTravel = bus;
     }
+
+    public static CurrentUser getInstance()
+    {
+        if(single_instance == null){
+            single_instance = new CurrentUser();
+        }
+        return single_instance;
+    }
+
 }

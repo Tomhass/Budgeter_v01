@@ -258,13 +258,12 @@
         android:layout_height="41dp"
         android:layout_marginStart="262dp"
         android:layout_marginLeft="262dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:text="£"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/savingTxtView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+        tools:layout_editor_absoluteY="462dp" />
 
 </android.support.constraint.ConstraintLayout>
