@@ -75,7 +75,7 @@
         tools:text="How much are you paid each month?" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchCar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -84,13 +84,13 @@
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
         android:text="Car     "
-        app:layout_constraintEnd_toStartOf="@+id/switch2"
+        app:layout_constraintEnd_toStartOf="@+id/switchBus"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/switchBus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
@@ -99,12 +99,12 @@
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
         android:text="Bus    "
-        app:layout_constraintEnd_toStartOf="@+id/switch3"
-        app:layout_constraintStart_toEndOf="@+id/switch1"
+        app:layout_constraintEnd_toStartOf="@+id/switchNA"
+        app:layout_constraintStart_toEndOf="@+id/switchCar"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/switchNA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
@@ -116,7 +116,7 @@
         android:text="N/A     "
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/switch2"
+        app:layout_constraintStart_toEndOf="@+id/switchBus"
         app:layout_constraintTop_toBottomOf="@+id/monthlyTxtView" />
 
     <TextView
@@ -154,7 +154,7 @@
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switchCar"
         tools:text="Saving" />
 
     <TextView
