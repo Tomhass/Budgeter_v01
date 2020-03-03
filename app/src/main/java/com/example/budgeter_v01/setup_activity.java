@@ -10,14 +10,19 @@ import android.content.Intent;
 
 
 public class setup_activity extends AppCompatActivity {
+    public static int monthlyPayment;
+    public static int monthlySaving;
+    public static Boolean busTravel;
+    public static Boolean carTravel;
+    public static Boolean notAvailable;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setup_activity);
 
-        CurrentUser user = new CurrentUser();
-
-        // Instantiating
+        // Initialising UI elements
         final SeekBar monthlySBar = (SeekBar) findViewById(R.id.seekBar);
         final SeekBar savingSBar = (SeekBar) findViewById(R.id.seekBar2);
         final TextView mnthlyTxtView = (TextView) findViewById(R.id.monthlyTxtView);
@@ -25,18 +30,24 @@ public class setup_activity extends AppCompatActivity {
         final Button continueButton = (Button) findViewById(R.id.Btn_Continue);
 
 
-
         monthlySBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                int x = seekBar.getProgress();
-                mnthlyTxtView.setText(String.valueOf(x));
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                int y = seekBar.getProgress();
+                mnthlyTxtView.setText(String.valueOf(y));
             }
+
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) { }
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) { }
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                monthlyPayment = seekBar.getProgress();
+            }
         });
+
 
         savingSBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -49,19 +60,10 @@ public class setup_activity extends AppCompatActivity {
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
+                monthlySaving = seekBar.getProgress();
                 continueButton.setVisibility(View.VISIBLE);
             }
         });
     }
-
-    private void configureContinueBtn() {
-        final Button continueButton = (Button) findViewById(R.id.Btn_Continue);
-
-        continueButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(setup_activity.this, CarTravelActivity.class));
-            }
-        });
-    }
 }
+
