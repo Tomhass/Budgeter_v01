@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "1006804178868",
-    "firebase_url": "https://project-4241370214255071963.firebaseio.com",
-    "project_id": "project-4241370214255071963",
-    "storage_bucket": "project-4241370214255071963.appspot.com"
+    "project_number": "191570583740",
+    "firebase_url": "https://budgeter-1d165.firebaseio.com",
+    "project_id": "budgeter-1d165",
+    "storage_bucket": "budgeter-1d165.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1006804178868:android:2430fbc99c12c1ffd5c4e1",
+        "mobilesdk_app_id": "1:191570583740:android:dd3d947679cc8643f670b9",
         "android_client_info": {
           "package_name": "com.example.budgeter_v01"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1006804178868-0431khkmdes2cu5tqqcnd1g9f6cbmr4d.apps.googleusercontent.com",
+          "client_id": "191570583740-ttm84dq5ej19t67bgg4c31kbclsdsiq4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBsY250KT18aMnwraUNjI-mgi7tEEJa2gs"
+          "current_key": "AIzaSyARx9LUc8r2HlKsKk1oSHB_o7jK-ajxERQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1006804178868-0431khkmdes2cu5tqqcnd1g9f6cbmr4d.apps.googleusercontent.com",
+              "client_id": "191570583740-ttm84dq5ej19t67bgg4c31kbclsdsiq4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
